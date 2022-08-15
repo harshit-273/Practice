@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+/*
+	- Here we are going to check if the string is palindrome or not
+*/
+
 func CheckPalindrome(str string) (isPalindrome bool) {
 	isPalindrome = false
 	var start int = 0
