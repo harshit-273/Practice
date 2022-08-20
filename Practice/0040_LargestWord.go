@@ -2,18 +2,17 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 /*
 	- Here we are finding the word with the largest length in the sentence.
 */
 
-func LargestWord(str string) (outStr string) {
+func LargestWord(str string) (outStr string, largeWordLength int) {
 	var start int = -1
 	var end int = -1
 	var ptr int = 0
-	var largeWordLength int = math.MinInt
+	largeWordLength = 0
 	var currLen int = 0
 	outStr = "not present"
 
@@ -31,7 +30,7 @@ func LargestWord(str string) (outStr string) {
 		ptr++
 	}
 
-	if start != -1 && end != -1 {
+	if start != -1 && end != -1 && largeWordLength != 0 {
 		outStr = str[start:(end + 1)]
 	}
 
@@ -39,5 +38,6 @@ func LargestWord(str string) (outStr string) {
 }
 
 func main() {
-	fmt.Printf("Largest word is %q", LargestWord(""))
+	largeWord, sizeOfLargeWord := LargestWord(" ")
+	fmt.Printf("Largest word is %q with the length of %d", largeWord, sizeOfLargeWord)
 }
