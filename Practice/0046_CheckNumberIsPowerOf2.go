@@ -7,14 +7,11 @@ import "fmt"
 */
 
 func CheckIfNumberIsPowerOf2(num int) bool {
-	if num&(num-1) == 0 {
-		return true
-	}
-	return false
+	return (num <= 0) && (num&(num-1) == 0)
 }
 
 func main() {
-	var num int = 5
+	var num int = 0
 	if CheckIfNumberIsPowerOf2(num) {
 		fmt.Printf("%d is power of 2", num)
 	} else {
