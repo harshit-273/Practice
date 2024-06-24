@@ -95,6 +95,31 @@ Pattern - 10
 **
 *
 
+Pattern - 11
+
+1
+01
+101
+0101
+10101
+
+Pattern - 12
+
+1        1
+12      21
+123    321
+1234  4321
+1234554321
+
+Pattern - 13
+
+01
+02 03
+04 05 06
+07 08 09 10
+11 12 13 14 15
+
+
 ************************************************************************/
 
 func main() {
@@ -241,4 +266,55 @@ func main() {
 		fmt.Println()
 	}
 	*/
+	
+	//Pattern - 11
+	/*
+	var zero1 int = 5
+	for i:=1; i<=zero1; i++ {
+		for j:=1; j<=i; j++ {
+			if (i+j)%2 == 0 {
+				fmt.Printf("1")
+			} else {
+				fmt.Printf("0")
+			}
+		}
+		fmt.Println()
+	}
+	*/
+	
+	//Pattern - 12
+	/*
+	var nums int = 5
+	
+	for i:=1; i<= nums; i++ {
+		for j:=1; j<=i; j++ {
+			fmt.Printf("%d", j)
+		}
+		for spaces:=1; spaces<=(2*(nums-i)); spaces++ {
+			fmt.Printf(" ")
+		}
+		for k:=i; k>=1; k-- {
+			fmt.Printf("%d", k)
+		}
+		fmt.Println()
+	}
+	*/
+	
+	//Pattern - 13
+	/*
+	var nums int = 5
+	var count int = 1
+	
+	for i:=1; i<=nums; i++ {
+		for j:=1; j<=i; j++ {
+			fmt.Printf("%02d ", count)
+			count++
+		}
+		fmt.Println()
+	}
+	*/
+	
+	//Pattern - 14
+	
+	
 }
