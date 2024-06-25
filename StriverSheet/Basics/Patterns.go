@@ -119,6 +119,33 @@ Pattern - 13
 07 08 09 10
 11 12 13 14 15
 
+Pattern - 14
+
+**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+**********
+
+Pattern - 15
+
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+
+Pattern - 16
+
 
 ************************************************************************/
 
@@ -315,6 +342,69 @@ func main() {
 	*/
 	
 	//Pattern - 14
+	/*
+	var stars int = 5
 	
+	for i:=1; i<=stars; i++ {
+		for j:=1; j<=(2*stars); j++ {
+			if j<=(stars-(i-1)) || j>(stars+(i-1)) {
+				fmt.Printf("*")
+			} else {
+				fmt.Printf(" ")
+			}
+		}
+		fmt.Println()
+	}
+	for i:=stars; i>0; i-- {
+		for j:=1; j<=(2*stars); j++ {
+			if j<=(stars-(i-1)) || j>(stars+(i-1)){
+				fmt.Printf("*")
+			} else {
+				fmt.Printf(" ")
+			}
+		}
+		fmt.Println()
+	}
+	*/
 	
+	//Pattern - 15
+	/*
+	var stars int = 5
+	
+	for i:=stars; i>0; i-- {
+		for j:=1; j<=(2*stars); j++ {
+			if j<=(stars-(i-1)) || j>(stars+(i-1)){
+				fmt.Printf("*")
+			} else {
+				fmt.Printf(" ")
+			}
+		}
+		fmt.Println()
+	}
+	for i:=2; i<=stars; i++ {
+		for j:=1; j<=(2*stars); j++ {
+			if j<=(stars-(i-1)) || j>(stars+(i-1)) {
+				fmt.Printf("*")
+			} else {
+				fmt.Printf(" ")
+			}
+		}
+		fmt.Println()
+	}
+	*/
+	
+	//Pattern - 15
+	
+	var stars int = 5
+	
+	for i:=1; i<=stars; i++ {
+		for j:=1; j<=stars; j++ {
+			if i == 1 || j == 1 || i == stars || j == stars {
+				fmt.Printf("*")
+			} else {
+				fmt.Printf(" ")
+			}
+		}
+		fmt.Println()
+	}
 }
