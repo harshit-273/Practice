@@ -1,5 +1,7 @@
 /************************************************************************
 Given an integer N, return the number of digits in N.
+
+Here, we are counting the digits by dividing the number by 10 repeatedly we get zero. So, each time we divide by 10 is added to the count of digits.
 ************************************************************************/
 
 package main
