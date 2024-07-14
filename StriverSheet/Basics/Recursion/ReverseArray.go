@@ -14,7 +14,7 @@ func revArr(arr []int, nth int, lastNth int) ([]int) {
 		temp = arr[nth]
 		arr[nth] = arr[lastNth]
 		arr[lastNth] = temp
-		revArr(arr, nth+1, lastNth-1)
+		arr = revArr(arr, nth+1, lastNth-1)
 	}
 	return arr
 }
